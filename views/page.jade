@@ -1,0 +1,14 @@
+doctype
+html
+    head
+        title = 'My Real Time Web Chat Application'
+        script(src = '/chat.js')
+        script(src = '/socket.io/socket.io.js')
+    body
+        #content(style = 'width:500px;height:300px;margin:0 0 20px 0;border:1px solid #777;overflow-y:scroll;')
+        | Name
+        input#name(style='width:150px')
+        br
+        .controls
+            input#field(style = 'width:350px;')
+            input#send(type = 'button', value='send')
