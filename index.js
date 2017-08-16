@@ -8,7 +8,7 @@ app.set('view engine','jade');  //jade引擎
 app.engine('jade',require('jade').__express);   //引入jade
 app.get('/',function(req,res){      //URL渲染
     res.render('page');
-});+
+});
 
 
 
