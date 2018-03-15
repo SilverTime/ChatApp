@@ -4,8 +4,7 @@
     "description": "Real time web chat",
     "dependencies": {
         "socket.io": "latest",
-        "express": "latest",
-        "jade": "latest"
+        "express": "latest"
     },
-    "author": "developer"
+    "author": "bvzgong"
 }

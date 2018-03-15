@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="Multiplayer,chat,room">
+    <meta name="description" content="one multiplayer chat room application built by node and socket.io">
+    <title>Multiplayer chat room</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="wrapper">
+    <div class="banner">
+        <h1>Multiplayer Chatroom</h1>
+        <span id="status"></span>
+    </div>
+    <div id="historyMsg">
+    </div>
+    <div class="controls" >
+        <textarea id="messageInput" placeHolder="enter to send"></textarea>
+        <input id="sendBtn" type="button" value="SEND">
+        <div id="emojiWrapper">
+        </div>
+    </div>
+</div>
+<div id="loginWrapper">
+    <p id="info">connecting to server...</p>
+    <div id="nickWrapper">
+        <input id="nicknameInput" type="text" placeHolder="昵称" />
+        <input id="loginBtn" type="button" value="确定" />
+    </div>
+</div>
+<script src="socket.io/socket.io.js" type="text/javascript"></script>
+<script src="js/client.js"></script>
+</body>
+</html>
